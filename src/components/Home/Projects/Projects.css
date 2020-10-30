@@ -1,0 +1,13 @@
+.text-centering h1 {
+    border-bottom:5px solid rgb(20, 20, 117);
+    display:inline-block;
+    font-weight: 700;
+}
+
+/* .card-sizing{
+    height: 500px;
+} */
+
+.project-bg{
+    background-color: rgb(33, 128, 128);
+}

@@ -1,0 +1,13 @@
+img{
+    height: 400px;
+}
+
+.detail-info h1{
+    font-size: 70px;
+    font-weight: 700;
+    padding: 10px;
+}
+.detail-info p{
+    font-size: large;
+    padding: 10px;
+}

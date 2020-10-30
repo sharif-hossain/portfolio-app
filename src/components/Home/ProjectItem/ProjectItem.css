@@ -1,0 +1,12 @@
+.card{
+    height: 90%;
+}
+.card:hover{
+    transform: scaleY(1.02);
+    transition: .5s;
+}
+.tech-bg span{
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
