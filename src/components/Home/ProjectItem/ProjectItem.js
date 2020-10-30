@@ -1,12 +1,12 @@
 import React from "react";
 import "./ProjectItem.css";
 
-const ProjectItem = ({ data }) => {
+const ProjectItem = ({ data, handleClick }) => {
   
   return (
-    <div className="col-md-4">
+    <div className="col-md-4"  onClick={()=>handleClick(data)}>
       <div class="card card-sizing mb-5">
-        <div class="view overlay">
+        <div class="view overlay" >
           <img class="card-img-top image" src={data.img} alt="" />
           <a href>
             <div class="mask rgba-white-slight"></div>
