@@ -3,6 +3,7 @@ import "./Projects.css";
 import ProjectsData from '../../../fakeData/ProjectsData'
 import ProjectItem from "../ProjectItem/ProjectItem";
 import { useHistory } from "react-router-dom";
+import NotFound from "../Home/NotFound/NotFound";
 const Projects = () => {
   const history = useHistory();
     const projectsDetails = ProjectsData;
@@ -20,7 +21,7 @@ const Projects = () => {
       </div>
       <div className="row mx-5">
         {
-            projectInfo.map(data => <ProjectItem id={data.id} data={data} handleClick={handleClick}></ProjectItem> )
+          projectInfo.map(data => <ProjectItem id={data.id} data={data} handleClick={handleClick}></ProjectItem> )
         }
       </div>
     </div>

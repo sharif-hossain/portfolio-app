@@ -3,3 +3,10 @@
     text-decoration: underline;
     font-weight: 700;
 }
+.bg{
+    background-color: #f4f7fc;
+}
+.image {
+    height: 600px;
+    width: 600px;
+}
