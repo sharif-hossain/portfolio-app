@@ -6,6 +6,8 @@ import {
   Route,
 } from "react-router-dom";
 import Articles from "./components/Articles/Articles";
+import ArticlesInfo from "./components/Articles/ArticlesInfo/ArticlesInfo";
+import Blogs from "./components/Articles/Blogs";
 import ProjectInfo from "./components/Blogs/ProjectInfo";
 import Home from "./components/Home/Home/Home/Home";
 import NotFound from "./components/Home/Home/NotFound/NotFound";
@@ -26,8 +28,8 @@ function App() {
         <Route path="/projects">
           <ProjectInfo/>
         </Route>
-        <Route path="/blogs">
-          <Articles/>
+        <Route path="/blogs/:id">
+          <ArticlesInfo></ArticlesInfo>
         </Route>
         <Route path="*">
           <NotFound/>

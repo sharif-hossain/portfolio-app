@@ -1,5 +1,5 @@
 .text-centering h1 {
-    border-bottom:5px solid rgb(20, 20, 117);
+    border-bottom:5px solid rgb(33, 128, 128);
     display:inline-block;
     font-weight: 700;
 }
@@ -9,5 +9,6 @@
 } */
 
 .project-bg{
-    background-color: rgb(33, 128, 128);
+    /* background-color: rgb(33, 128, 128); */
+    background-color: #f1f5f8;
 }

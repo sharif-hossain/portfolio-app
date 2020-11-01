@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="row mx-5 d-flex align-items-center">
             <div className="col-md-4 detail-info">
                 <h1>I'm Sharif</h1>
-                <p>Professional web developer comfortable with <strong>reactJS</strong> </p>
+                <p>Professional web developer comfortable with <strong className="banner-color">reactJS</strong> </p>
                 <a href={pdf} download="resume.pdf"><button className="btn btn-primary">DOWNLOAD RESUME</button></a>
             </div>
             <div className="col-md-6">

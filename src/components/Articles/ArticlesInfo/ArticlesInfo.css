@@ -1,0 +1,25 @@
+.background{
+    background-color: #f1f5f8;
+    /* height: 1000px; */
+}
+#title{
+    font-size: 65px;
+    font-weight: 800;
+}
+div.para{
+    line-height: 30px;
+    background-color: lightseagreen ;
+    border-radius: 10px;
+}
+.img-fluid{
+    width: 350px;
+    height: 350px;
+}
+.dummy-code{
+    background-color: #222;
+    border-radius: 10px ;
+}
+.text-gold{
+    color: #ff0 !important;
+  
+}

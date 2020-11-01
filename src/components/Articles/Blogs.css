@@ -1,0 +1,9 @@
+.text-header h1{
+    display: inline-block;
+    border-bottom: 5px solid rgb(33, 128, 128);
+    font-weight: 700;
+    
+}
+.text-header{
+    background-color: whitesmoke;
+}

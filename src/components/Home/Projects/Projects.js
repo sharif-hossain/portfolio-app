@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <div className="project-bg">
       <div className=" text-center text-centering my-5 ">
-        <h1 className="text-white mt-2">Projects</h1>
+        <h1 className="mt-2">Projects</h1>
       </div>
       <div className="row mx-5">
         {
