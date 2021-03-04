@@ -22,7 +22,7 @@ const ProjectItem = ({ data, handleClick }) => {
           </p>
         </div>
 
-        <div class="rounded-bottom mdb-color lighten-3 text-center bg-dark pt-3">
+        <div class="rounded-bottom mdb-color lighten-3 text-center bg-dark pt-1">
           <ul class="list-unstyled list-inline font-small d-flex justify-content-between mx-2">
             <li class="list-inline-item  white-text">
             <i class="fab fa-github pl-3"></i>

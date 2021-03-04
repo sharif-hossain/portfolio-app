@@ -3,13 +3,13 @@
     text-decoration: underline;
     font-weight: 700;
 }
-/* body {
+body {
     height: 100vh;
     margin: 0;
     display: grid;
-    place-items: center;
-    background: #222;
-  } */
+    /* place-items: center; */
+    /* background: #222; */
+  }
   
   .module-border-wrap {
    
@@ -51,8 +51,8 @@
     height: 600px;
     width: 600px;
 }
-.img-size{
-    height: 400px;
+.img-size img{
+    max-height: 300px;
 }
 .text-color{
     color: #0000ff;

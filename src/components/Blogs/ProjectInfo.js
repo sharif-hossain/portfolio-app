@@ -70,12 +70,12 @@ const ProjectInfo = () => {
           </section> */}
 
           <div className="mt-5">
-            <a className="" href="https://creative-agency-11.netlify.app/">
+            <a className="" href={`${projectData.liveSite}`}>
               {" "}
               <h6 target="_blank" className="font-weight-bold ">Live site : <span className="text-color">{projectData.liveSite}</span></h6>
             </a>
             
-            <a href="https://github.com/sharif-hossain/creative-agency-client">
+            <a href={`${projectData.github}`}>
               {" "}
               <h6 target="_blank" className="font-weight-bold">Github: <span className="text-color">{projectData.github}</span> </h6>
             </a>
@@ -91,7 +91,7 @@ const ProjectInfo = () => {
               </div>
             </div>
           </div>
-          <div className="text-center p-2">
+          <div className="text-center p-2 mt-4">
             <Link to="/home">
               <button className="btn btn-secondary">See more projects</button>
             </Link>

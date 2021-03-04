@@ -1,5 +1,5 @@
 .card{
-    height: 400px;
+    height: 420px;
 }
 .card-title{
     color: hsl(180, 59%, 32%);
@@ -8,11 +8,13 @@
     transform: scaleY(1.02);
     transition: .5s;
 }
+
 .tech-bg span{
     background-color: lightgray;
     padding: 5px;
     border-radius: 5px;
+    
 }
 .image{
-    height: 120%;
+    height: 300px;
 }

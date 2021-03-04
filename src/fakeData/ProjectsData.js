@@ -15,7 +15,7 @@ let projectInfo = [
     feature4:"collect shipment information ",
     feature5:"online payment gateway ",
     feature6:"login info",
-    liveSite: "https://ema-john.firebaseapp.com/",
+    liveSite: "https://emazon-shopping.web.app/",
     github: "https://github.com/sharif-hossain/ema-john-shopping",
     image1: "https://i.ibb.co/5FcWxXk/ema-john.png",
     image2:"https://i.ibb.co/r6LyjrK/ema.png",
@@ -36,9 +36,10 @@ let projectInfo = [
     feature4:"Add a service ",
     feature5:"Check all ordered service",
     feature6:"Delete a service ",
-    liveSite: "https://creativeagencyrecap.web.app//",
-    github: "https://github.com/sharif-hossain/creative-agency-client",
+    liveSite: "https://creativeagencyrecap.web.app/",
+    github: "https://github.com/sharif-hossain/creative-agency-clientSide",
     image1: "https://i.ibb.co/fk78Lws/creative.png",
+    image2:"https://i.ibb.co/zGYC9Xk/4-Customar-status.png",
   },
   {
     id: 3,
@@ -62,7 +63,7 @@ let projectInfo = [
     //   "https://github.com/sharif-hossain/creative-agency-client",
     //   // "https://github.com/sharif-hossain/creative-agency-server",
     // ],
-    github: "https://github.com/sharif-hossain/volunteer-network-client",
+    github: "https://github.com/sharif-hossain/Volunteer-Network-Client-Recap",
     ui: [
       "https://i.ibb.co/RpBWp3K/2-login.png",
       "https://i.ibb.co/HDt5Zyx/3-Customar-place-Order.png",
@@ -75,7 +76,6 @@ let projectInfo = [
     ],
     image1: "https://i.ibb.co/wWP1b0w/volunteer.png",
 	image2: "https://i.ibb.co/RyHxbXv/4-Customar-status.png",
-      image3: "https://i.ibb.co/Ttbzj43/5-Customar-review.png",
   },
   {
     id: 4,
@@ -101,6 +101,7 @@ let projectInfo = [
     liveSite: "https://travel-resort-09.netlify.app/",
     github: "https://github.com/sharif-hossain/travel-resort",
     image1: "https://i.ibb.co/H4M9fwS/travel.png",
+    image2:"https://i.ibb.co/Fgn8KgL/Search.png",
   },
   {
     id: 5,
@@ -126,6 +127,7 @@ let projectInfo = [
     liveSite: "https://doctors-portal-ph.web.app/",
     github: "https://github.com/sharif-hossain/doctors-portal-client",
     image1: "https://i.ibb.co/H4s0ZKZ/doctor.png",
+    image2:"https://i.ibb.co/qjdBmHb/3-doctor-appointments.png",
   },
   {
     id: 6,
@@ -151,6 +153,7 @@ let projectInfo = [
     // liveSite: "https://travel-resort-09.netlify.app/",
      github: "https://github.com/sharif-hossain/burj-al-arab",
     image1: "https://i.ibb.co/SvrMx5z/burjalarab.png",
+    image2: "https://i.ibb.co/SvrMx5z/burjalarab.png",
   },
 ];
 export default projectInfo;
