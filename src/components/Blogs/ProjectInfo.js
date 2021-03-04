@@ -6,75 +6,97 @@ import "./ProjectInfo.css";
 import ProjectsData from "../../fakeData/ProjectsData";
 import CommonProject from "./CommonProject";
 import NotFound from "../Home/Home/NotFound/NotFound";
+import FeatureItem from "./FeatureItem";
 const ProjectInfo = () => {
   const { id } = useParams();
 
-  const [projectInfo, setProjectInfo] = useState([]);
+  const [projectData, setProjectData] = useState([]);
 
   useEffect(() => {
     const project = ProjectsData.find((data) => data.id === parseInt(id));
-    setProjectInfo(project);
+    setProjectData(project);
   }, [id]);
 
-  console.log(projectInfo);
+  console.log(projectData);
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar style={{ backgroundColor: "#F1F5F8" }}></Navbar>
 
-      {projectInfo ? <div className="mx-5 p-5 bg">
-        <div>
-          <h1 className="heading my-3">Projects Details</h1>
-        </div>
-        <h2 className="font-weight-bold">Name: {projectInfo.title}</h2>
-        <div>
-          <h3 className="font-weight-bold">
-            Description: <span></span>{" "}
-          </h3>
-          <p className="p-2 ">{projectInfo.description}</p>
-        </div>
-        <h3 className="p-2 font-weight-bold">Key Features:</h3>
-        {/* <h5 className="p-2">{projectInfo.features}</h5> */}
-        <section className="features">
-          <div className="row">
-            <div className="col-md-5">
-              <h4>Client Side: </h4>
-              <li>{projectInfo.features}</li>
-              {/* <li>{projectInfo.features.f1}</li> */}
+      
+        <div className="mx-5 p-5 bg">
+          <div>
+            <h1 className="heading my-3">Projects Details</h1>
+          </div>
+          <h2 className="font-weight-bold animate__animated animate__rubberBand animate__delay-1s">Project Name: <span className="title">{projectData.title}</span></h2>
+          
+          <div>
+            <h4 className="font-weight-bold n2-ss-highlighted-heading-highlighted-text">
+              Description: <span></span>{" "}
+            </h4>
+            <p className="p-2 ">{projectData.description}</p>
+          </div>
+          <h4 className="p-2 font-weight-bold">Key Features:</h4>
+          {/* <h5 className="p-2">{projectInfo.features}</h5> */}
+          <div className="row module-border-wrap">
+            <div className="col-md-6 module">
+            <h5 className="font-weight-bold">Client Side : </h5>
+                <li>{projectData.feature1}</li>
+                <li>{projectData.feature2}</li>
+                <li>{projectData.feature3}</li>
             </div>
-            <div className="col-md-5">
-              <h4>Server side : </h4>
-              <li>{projectInfo.features}</li>
+            <div className="col-md-6 module">
+            <h5 className="font-weight-bold">Server side : </h5>
+                <li>{projectData.feature4}</li>
+                <li>{projectData.feature5}</li>
+                <li>{projectData.feature6}</li>
             </div>
           </div>
+          {/* <section className="features">
+            <div className="row p-2">
+              <div className="col-md-6">
+                <h5 className="font-weight-bold">Client Side : </h5>
+                <li>{projectData.feature1}</li>
+                <li>{projectData.feature2}</li>
+                <li>{projectData.feature3}</li>
+              </div>
+              <div className="col-md-6">
+                <h5 className="font-weight-bold">Server side : </h5>
+                <li>{projectData.feature4}</li>
+                <li>{projectData.feature5}</li>
+                <li>{projectData.feature6}</li>
+              </div>
+             
+            </div>
+          </section> */}
 
-          {/* <ul>
-            <li>{projectInfo.features[3]}</li>
-            <li>{projectInfo.features[4]}</li>
-            <li>{projectInfo.features[5]}</li>
-          </ul>  */}
-        </section>
-
-        <div className="p-2">
-          <a className="" href="https://creative-agency-11.netlify.app/">
-            {" "}
-            Live site : {projectInfo.liveSite}
-          </a>
-          <br />
-          <a href="https://github.com/sharif-hossain/creative-agency-client">
-            {" "}
-            Github: {projectInfo.github}
-          </a>
+          <div className="mt-5">
+            <a className="" href="https://creative-agency-11.netlify.app/">
+              {" "}
+              <h6 target="_blank" className="font-weight-bold ">Live site : <span className="text-color">{projectData.liveSite}</span></h6>
+            </a>
+            
+            <a href="https://github.com/sharif-hossain/creative-agency-client">
+              {" "}
+              <h6 target="_blank" className="font-weight-bold">Github: <span className="text-color">{projectData.github}</span> </h6>
+            </a>
+          </div>
+          <div>
+            <h4 className="my-4 font-weight-bold">User Interfaces:</h4>
+            <div className="row img-size">
+              <div className="col-md-6">
+                <img className="img-fluid image" src={projectData.image1} alt="" />  
+              </div>
+              <div className="col-md-6">
+              <img className="img-fluid image" src={projectData.image2} alt="" /> 
+              </div>
+            </div>
+          </div>
+          <div className="text-center p-2">
+            <Link to="/home">
+              <button className="btn btn-secondary">See more projects</button>
+            </Link>
+          </div>
         </div>
-        <div>
-          <h3 className="p-2 font-weight-bold">User Interfaces:</h3>
-          <img className="img-fluid image" src={projectInfo.image} alt="" />
-        </div>
-        <div className="text-center p-2">
-          <Link to="/home">
-            <button className="btn btn-secondary">See more projects</button>
-          </Link>
-        </div>
-      </div> : <Link to="/home"><button className="btn btn-primary mx-5">Sorry! See projects?</button></Link>} 
     </div>
   );
 };

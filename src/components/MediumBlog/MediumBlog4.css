@@ -1,0 +1,12 @@
+.medium-blog{
+    padding: 50px 100px 50px 100px;
+    background-color: #f1f5f8;
+    font-size: large;
+    line-height: 35px;
+    min-height: 700px;
+    font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+.code-style{
+    background-color: lightgray;
+    padding: 15px;
+}

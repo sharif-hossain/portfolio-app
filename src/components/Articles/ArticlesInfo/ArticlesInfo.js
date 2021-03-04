@@ -13,8 +13,8 @@ const ArticlesInfo = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="mx-5 my-4 background">
-        <h1 className="text-center mb-3" id="title">
+      {/* <div className="mx-5 background px-5">
+        <h1 className="text-center pt-5" id="title">
           {articles.title}
         </h1>
         <div className="para">
@@ -50,7 +50,7 @@ const ArticlesInfo = () => {
             <Link to="/home"><div className="btn btn-primary">Blogs</div></Link>
             
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

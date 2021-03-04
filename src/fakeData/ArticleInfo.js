@@ -82,5 +82,12 @@ const latestArticles = [
     language: "React",
     Date: "30 November, 2020",
   },
+  {
+    id:4,
+    title:'A re-introduction to JavaScript',
+    img: 'https://i.ibb.co/V2K5X5v/js.jpg',
+    shortDes: 'JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time compiled, and multi-paradigm.',
+    
+}
 ];
 export default latestArticles;

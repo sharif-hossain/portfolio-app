@@ -1,7 +1,19 @@
-img{
+/* img{
+    height: 500px;
+} */
+.header {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+.banner{
+    height: 450px;
+}
+.image{
     height: 400px;
 }
-
 .detail-info h1{
     font-size: 70px;
     font-weight: 700;

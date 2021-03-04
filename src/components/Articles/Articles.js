@@ -15,6 +15,7 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 445,
     textAlign:"left",
+    fontFamily: "Times New Roman",
   },
   media: {
     height: 220,
@@ -28,7 +29,7 @@ const Articles = ({ article, handleClick }) => {
  
   return (
     
-      <div className="col-md-4 mb-5">
+      <div className="col-md-4 mb-5 card-design">
         <Card className={classes.root} onClick={()=>handleClick(article.id)}>
           <CardActionArea>
             <CardMedia
@@ -46,9 +47,6 @@ const Articles = ({ article, handleClick }) => {
             </CardContent>
           </CardActionArea>
           <CardActions >
-            <Button size="small" color="primary">
-              Share
-            </Button>
             <Button size="small" color="primary">
               Learn More
             </Button>

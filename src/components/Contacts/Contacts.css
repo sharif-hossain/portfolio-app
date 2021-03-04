@@ -1,0 +1,13 @@
+.contact-bg{
+    background-color: #f1f5f8;
+    min-height: 700px;
+}
+.nav-width{
+    width: 1000px;
+}
+.contact-hd h1{
+    
+    display: inline-block; 
+    font-weight: 900;
+    
+}

@@ -51,7 +51,7 @@ const Footer = () => {
   
    
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/" className=" text-white"> WebDevelopment.com</a>
+      <a href="https://mdbootstrap.com/" className=" text-white"> sharif'sPortfolio.com</a>
     </div>
     
   

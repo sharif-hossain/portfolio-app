@@ -14,7 +14,8 @@ const Blogs = () => {
 
     const handleClick=(id) =>{
         console.log('clicked', id)
-        history.push(`/blogs/${id}`)
+        // history.push(`/blogs/${id}`)
+        history.push(`/blog/${id}`)
       }
 
   return (

@@ -28,12 +28,12 @@ const ProjectItem = ({ data, handleClick }) => {
             <i class="fab fa-github pl-3"></i>
             </li>
             <li class="list-inline-item pr-2">
-              <a href="/" class="white-text">
+              <a target="_blank" href={data.liveSite} class="white-text">
                 Live Link
               </a>
             </li>
             <li class="list-inline-item pr-2">
-              <a href="/" class="white-text">
+              <a target="_blank"href={data.github} class="white-text">
                 Source code
               </a>
             </li>

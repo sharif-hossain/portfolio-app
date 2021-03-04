@@ -1,5 +1,8 @@
 .card{
-    height: 90%;
+    height: 400px;
+}
+.card-title{
+    color: hsl(180, 59%, 32%);
 }
 .card:hover{
     transform: scaleY(1.02);
@@ -11,5 +14,5 @@
     border-radius: 5px;
 }
 .image{
-    height: 95%;
+    height: 120%;
 }
